@@ -75,7 +75,7 @@ img{
 }
 
 .site-footer__link{
-
+    
 }
 
 .site-nav__list{
@@ -576,7 +576,7 @@ only screen and (                min-resolution: 2dppx) {
     border-top: 1px solid #495dcf33;
 }
 
- .faq-wrap__svg{
+.faq-wrap__svg{
     position: absolute;
     top: 25px;
     right: 19px;
@@ -728,3 +728,17 @@ form{
     color: #fff;
 }
 
+.social{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social__link{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social__link:hover{
+    color: var(--color-red);
+}
