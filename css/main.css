@@ -74,6 +74,10 @@ img{
     margin-right: auto;
 }
 
+.site-footer__link{
+
+}
+
 .site-nav__list{
     display: flex;
     margin-right: auto;
@@ -515,5 +519,212 @@ only screen and (                min-resolution: 2dppx) {
 .browsers__btn:hover{
     background-color: transparent;
     color: var(--color-blue);
+}
+
+.faq-wrap{
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 149px;
+    padding-top: 295px; 
+    text-align: center;
+}
+
+.faq-wrap__title{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: var(--color-black)
+}
+
+.faq-wrap__desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center; 
+    color: #242A45; 
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.faq-wrap__list{
+    margin-bottom: 54px;
+    list-style: none;
+}
+
+.faq-wrap__summary{
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px; 
+    text-align: start;  
+    color: #242A45;    
+    list-style: none;
+    border-bottom: 1px solid #495dcf33;
+    cursor: pointer;
+}
+
+.faq-wrap__summary:hover{
+    color: var(--color-red);
+}
+
+.faq-wrap__summary:nth-child(1){
+    padding-top: 10px;
+    border-top: 1px solid #495dcf33;
+}
+
+ .faq-wrap__svg{
+    position: absolute;
+    top: 25px;
+    right: 19px;
+}
+
+.faq-wrap__details summary .faq-wrap__svg{
+    transition: all 0.3s ease;
+    stroke: #FA5959;  
+}
+
+.faq-wrap__details[open] .faq-wrap__svg path{
+    transition: all 0.3s ease;
+    stroke: red;
+}
+
+.faq-wrap__details[open] svg{
+    transform: rotate(180deg);
+}
+
+.contact-us{
+    padding: 54px 0;
+    background-color: var(--color-blue);
+}
+
+.contact-us__wrap{
+    width: 432px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-us__small{
+    display: block;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 40px;   
+    text-align: center;
+    letter-spacing: 5px;   
+    color: #FFFFFF;   
+}
+
+.contact-us__title{
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;  
+}
+
+form{
+    position: relative;
+    z-index: 3;
+}
+.contact-us__email{
+    width: 300px;
+    margin-left: 42px;
+    padding: 10px 20px;
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px; 
+    color: rgba(36, 42, 69, 0.250109);
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.contact-us__invalid{
+    position: absolute;
+    top: -2px;
+    left: 39px;
+    z-index: -3;
+    width: 326px;
+    padding-top: 64px;
+    padding-right: 12px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    font-family: "Rubik";
+    font-size: 13px;
+    font-style: italic;
+    line-height: 12px;
+    /* text-align: end; */
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    background-color: var(--color-red);
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.contact-us__email:not(:placeholder-shown):not(:focus):invalid {
+    color: red;
+    background-image: url(../image/warning.svg);
+    background-repeat: no-repeat;
+    background-position: right 27px center;
+    background-size: 24px;
+}
+
+.contact-us__email:not(:placeholder-shown):not(:focus):invalid+.contact-us__invalid{ 
+    margin-left: auto;
+    margin-bottom: 19px;
+    color: #fff;
+    opacity: 1;
+}
+.contact-us__btn{
+    position: absolute;
+    right: -100px;
+    width: 126px;
+    margin-bottom: 52px;
+    padding: 10px 24px;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    background-color: var(--color-red);
+    border:none;
+    border-radius:5px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-us__btn:hover,
+.contact-us__btn:active{
+    background-color: #fff;
+    color: var(--color-red);
+}
+
+.site-footer{
+    background-color:var(--color-black);    
+    padding: 32px 0;
+}
+
+.site-footer__wrap{
+    display: flex;
+    align-items: center;
+}
+
+.site-footer__link{
+    margin-right: 65px;
+}
+
+.site-nav__link--modify{
+    color: #fff;
 }
 
